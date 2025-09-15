@@ -1,0 +1,12 @@
+:root {
+  --color-navy: #2F2E41;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-pink: #F8DDE1;
+  --color-bluewhite: #F4F7FF;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: var(--color-bluewhite);
+}
