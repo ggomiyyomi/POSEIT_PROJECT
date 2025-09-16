@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOSA_MSA_2차과제</title>
-   
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.css" />
 </head>
 <body>
-    <div>
-        
+     <!-- 네비게이션바 -->
+    <div id="navbar"></div>
+ <!-- fullPage.js 구조 -->
+  <div id="fullpage">
+
+    <!-- 1번째 섹션: 로고 + 로그인 -->
+    <div class="section">
+      <div class="main-logo">
+        <img src="../assets/img/POSEIT_row.svg" alt="POSEIT 로고">
+      </div>
+      <div class="login-btn" onclick="location.href='../pages/login.html'">
+        <span>LOGIN</span>
+        <img class="login-circle" src="../assets/img/icon-arrow.png" alt="→">
+      </div>
     </div>
+
+    <!-- 2번째 섹션: FRAME -->
+    <div class="section section-blue">
+      <div>
+        <h2 class="jalnan-text mb-4">FRAME</h2>
+        <p class="text-center">프레임 카테고리별 콘텐츠 들어갈 자리</p>
+      </div>
+    </div>
+
+    <!-- 3번째 섹션: Trend -->
+    <div class="section section-white">
+      <div>
+        <h2 class="jalnan-text mb-4">Trend Pose</h2>
+        <h2 class="jalnan-text mb-4">TOP 3</h2>
+        <p class="text-center">인기 순위 들어갈 자리</p>
+      </div>
+    </div>
+
+    <!-- 3번째 섹션: BOOTH -->
+    <div class="section section-blue">
+      <div>
+        <h2 class="jalnan-text mb-4">BOOTH</h2>
+        <p class="text-center">지도 API 들어갈 자리</p>
+      </div>
+       <!-- 푸터 -->
+      <div id="footer"></div>
+    </div>
+
+  </div>
+
+  
+
+ 
+  
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- fullPage.js 초기화 -->
+  <script>
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      navigation: true,
+      scrollHorizontally: false
+    });
+  </script>
 </body>
 </html>
