@@ -1,2 +1,2 @@
-# MSA_MINIPROJECT
-KOSA MSA 2차 미니 과제 개인 웹사이트
+# POSEIT_project
+개인 웹사이트 - 인생네컷 포즈 zip
